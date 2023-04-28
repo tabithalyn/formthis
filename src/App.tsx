@@ -23,8 +23,6 @@ const INITIAL_DATA:FormData = {
   country: ""
 }
 
-// https://youtu.be/uDCBSnWkuH0?t=782
-
 function App() {
   const [data, setData] = useState(INITIAL_DATA);
   function updateFields(fields: Partial<FormData>) {
@@ -54,7 +52,7 @@ function App() {
     margin: "1rem",
     borderRadius: ".5rem",
     fontFamily: "Arial",
-    maxWidth: "max-content",
+    maxWidth: "100%",
   }}>
   
   <form onSubmit={onSubmit}>

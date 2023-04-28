@@ -17,9 +17,9 @@ export function AccountForm({
 }: AccountFormProps) {
 
   return (
-    <FormWrapper title="Account Creation">
+    <FormWrapper title="Create An Account">
     <Form>
-      <Form.Group className="mb-3" controlId="formEmail">
+      <Form.Group className="mb-3 form-control-lg" controlId="formEmail">
         <Form.Label>Email Address</Form.Label>
         <Form.Control
           autoFocus
@@ -30,7 +30,7 @@ export function AccountForm({
           onChange={e => updateFields({ email: e.target.value })}
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formPassword">
+      <Form.Group className="mb-3 form-control-lg" controlId="formPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control
           required
@@ -42,5 +42,5 @@ export function AccountForm({
       </Form.Group>
     </Form>
     </FormWrapper>
-  )
+  );
 }

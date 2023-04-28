@@ -21,18 +21,18 @@ export function ProfileForm({
 }: ProfileFormProps) {
   return (
     <FormWrapper title="Profile Creation">
-      <Form.Group className="mb-3" controlId="formName">
+      <Form.Group className="form-control-lg" controlId="formName">
         <Form.Label>Name</Form.Label>
         <Form.Control
           autoFocus
           required
-          type="email"
+          type="text"
           value={name}
           placeholder="Name..."
           onChange={e => updateFields({ name: e.target.value })}
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formUsername">
+      <Form.Group className="form-control-lg" controlId="formUsername">
         <Form.Label>Username</Form.Label>
         <Form.Control
           required
@@ -42,7 +42,7 @@ export function ProfileForm({
           onChange={e => updateFields({ username: e.target.value })}
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formAge">
+      <Form.Group className="form-control-lg" controlId="formAge">
         <Form.Label>Age</Form.Label>
         <Form.Control
           required
@@ -52,7 +52,7 @@ export function ProfileForm({
           onChange={e => updateFields({ age: e.target.value })}
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formCountry">
+      <Form.Group className="mb-3 form-control-lg" controlId="formCountry">
         <Form.Label>Country</Form.Label>
         <Form.Control
           required
